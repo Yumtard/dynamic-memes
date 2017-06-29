@@ -60,5 +60,5 @@ private:
 	Sound sndLose = Sound( L"spayed.wav" );
 	Vei2 topLeft;
 	State state = State::Memeing;
-	Tile* field;
+	Tile* field = nullptr;
 };

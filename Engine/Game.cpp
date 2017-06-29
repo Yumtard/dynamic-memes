@@ -69,10 +69,10 @@ void Game::UpdateModel()
 				if (e.GetType() == Mouse::Event::Type::LPress)
 				{
 					delete field;
+					field = nullptr;
 					state = State::SelectionMenu;
 				}
 			}
-				
 		}
 		else
 		{
