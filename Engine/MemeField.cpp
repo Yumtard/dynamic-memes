@@ -155,6 +155,15 @@ MemeField::MemeField( const Vei2& center,int nMemes, int width_in, int height_in
 	}
 }
 
+MemeField::~MemeField()
+{
+	if (field)
+	{
+		delete[]field;
+		field = nullptr;
+	}
+}
+
 void MemeField::Draw( Graphics& gfx ) const
 {
 	gfx.DrawRect( GetRect().GetExpanded( borderThickness ),borderColor );

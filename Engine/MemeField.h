@@ -39,7 +39,7 @@ private:
 	};
 public:
 	MemeField( const Vei2& center,int nMemes, int width, int height );
-	MemeField() = default;
+	~MemeField();
 	void Draw( Graphics& gfx ) const;
 	RectI GetRect() const;
 	void OnRevealClick( const Vei2& screenPos );
